@@ -1,0 +1,22 @@
+@import "sets.scss";
+.aboutus--wrapper{
+	background-color: $cbg2 ;
+}
+.aboutus{
+	background: $cbg2 left no-repeat $bg2;
+	min-height: 700px;
+	align-items: flex-end;
+	justify-content: center;
+	flex-direction: column;
+
+	&__title{
+		width: 500px;
+		margin-bottom: 35px;
+		@extend %fh2;
+	}
+	&__p{
+		width: 500px;
+		margin-bottom: 80px;
+		@extend %fz3;
+	}
+}
