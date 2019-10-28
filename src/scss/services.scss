@@ -58,3 +58,39 @@
 		}
 	}
 }
+@media only screen and (max-width: 950px){
+	.services--wrapper{
+		padding: 0 25px;
+		.services{
+			padding-top: 300px;
+			margin: 50px 0;
+			background-position: top;
+			display: flex;
+			flex-flow: column nowrap;
+			align-items: center;
+			justify-content: center;
+			&__title{
+				margin-bottom: 50px;
+			}
+			&_btns{
+				margin: 0;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 400px){
+	.services--wrapper{
+		padding: 0;
+		.services{
+			margin-left: auto;
+			margin-right: auto;
+			&_btns{
+				width: 100%;
+				&__btn{
+					width: 95%;
+					height: 40%;
+				}
+			}
+		}
+	}
+}

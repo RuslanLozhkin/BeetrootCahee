@@ -57,3 +57,40 @@
 		}
 	}
 }
+@media only screen and (max-width: 950px){
+	.subscribe--wrapper{
+		padding: 0 25px;
+		.subscribe{
+			background-position: bottom;
+			padding-bottom: 200px;
+		}
+	}
+}
+@media only screen and (max-width: 600px){
+	.subscribe--wrapper{
+		padding: 0;
+		.subscribe{
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			&__title{
+				text-align: center;
+				width: 100%;
+			}
+			&__p{
+				text-align: center;
+				width: 100%;
+			}
+			&_form{
+				width: 100%;
+				display: flex;
+				flex-flow: column wrap;
+				align-items: center;
+				input[type="text"]{
+					width: 80%;
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}

@@ -4,7 +4,6 @@
 }
 .fresh{
 	background: $cbg1 right no-repeat $bg1;
-	min-height: 1000px;
 	height: 100vh;
 	flex-direction: column;
 	.header{
@@ -14,6 +13,12 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
+		nav input[type="checkbox"]{
+			display: none;
+		}
+		nav label{
+			display: none;
+		}
 		nav ul{
 			width: 600px;
 			list-style: none;
@@ -65,6 +70,89 @@
 		justify-content: center;
 		a{
 			height: 40px;
+		}
+	}
+}
+@media only screen and (max-width: 850px){
+	.fresh--wrapper{
+		padding: 0 25px;
+		.fresh{
+			.header{
+				nav {
+					display: flex;
+					position: absolute;
+					width: 100%;
+					justify-content: center;
+					text-align: center;
+					ul{
+						display: none;
+						li{
+							border: none;
+							a{
+								color: #fff;
+								font-size: 32px;
+							}
+							+ li{
+								margin-top: 20px;
+							}
+						}
+					}
+					label{
+						display: block;
+						cursor: pointer;
+						font-size: 60px;
+					}
+					input[type="checkbox"]:checked ~ ul{
+						display: flex;
+						width: 100%;
+						flex-flow: column nowrap;
+						position: absolute;
+						top: 120px;
+						background: rgba(0,0,0,.8);
+						padding-top: 20px;
+						padding-bottom: 20px;
+						li{
+							display: block;
+							&:hover{
+								a{
+									opacity: .3;
+								}
+							}
+						}
+		
+					}
+				}
+				
+			}
+			&_main{
+				align-self: center;
+				display: flex;
+				flex-flow: column nowrap;
+				align-items: center;
+				text-align: center;
+				&__btn{
+					display: flex;
+					align-self: center;
+				}
+			}
+		}
+
+	}
+}
+@media only screen and (max-width: 700px){
+	.fresh--wrapper{
+		padding: 0;
+		.fresh{
+			background-position: center;
+			&_main{
+				width: 100%;
+				&__title{
+					width: 100%;
+				}
+				&__p{
+					width: 100%;
+				}
+			}
 		}
 	}
 }
