@@ -2,13 +2,19 @@
 	background-color: $cbg3;
 }
 .services{
+	display: flex;
 	background: $cbg3 right no-repeat $bg3;
 	min-height: 790px;
 	flex-direction:row-reverse;
 	align-items: center;
 	justify-content: space-between;
-	&__title{
-		@extend %fh2;
+	padding-top: 330px;
+	&__title h2{
+		font-size: 90px;
+		font-weight: bold;
+		color: $ctxt2;
+		line-height: .8;
+		text-transform: capitalize;
 	}
 	&_btns{
 		list-style: none;
@@ -58,11 +64,23 @@
 		}
 	}
 }
+@media only screen and (max-width: 1200px){
+	.services--wrapper{
+		padding: 0 25px;
+		.services{
+			display: flex;
+			justify-content: space-between;
+			&_btns{
+				margin-left: 0;
+			}	
+		}
+	}
+}
 @media only screen and (max-width: 950px){
 	.services--wrapper{
 		padding: 0 25px;
 		.services{
-			padding-top: 300px;
+			padding-top: 100px;
 			margin: 50px 0;
 			background-position: top;
 			display: flex;
@@ -70,7 +88,8 @@
 			align-items: center;
 			justify-content: center;
 			&__title{
-				margin-bottom: 50px;
+				margin-bottom: 100px;
+				width: 80%;
 			}
 			&_btns{
 				margin: 0;
@@ -78,17 +97,36 @@
 		}
 	}
 }
+@media only screen and (max-width: 550px){
+	.services--wrapper{
+		padding: 0;
+	}
+}
 @media only screen and (max-width: 400px){
 	.services--wrapper{
 		padding: 0;
 		.services{
-			margin-left: auto;
-			margin-right: auto;
+			&__title{
+				h2{
+					text-align: center;
+				}
+			}
 			&_btns{
+				display: flex;
+				flex-flow: column nowrap;
 				width: 100%;
+				align-items: center;
 				&__btn{
-					width: 95%;
-					height: 40%;
+					width: 90%;
+					height: 100%;
+					span{
+						margin: 10px 0;
+					}
+					a{
+						strong{
+							width: 250px;
+						}
+					}
 				}
 			}
 		}

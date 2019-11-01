@@ -69,28 +69,34 @@ $hbtn: 55px;
 	color: $ctxt1;
 	text-align: center;
 }
-%fh1{/*fresh life h2*/
+%fz7{
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 25px;
+	color: $ctxt1;
+}
+%fh1 h2{/*fresh life h2*/
 	font-size: 60px;
 	font-weight: 600;
     color: $ctxt1;
     line-height: .8;
     text-transform: capitalize;
 }
-%fh2{/*about us h2 services h2*/
+%fh2 h2{/*about us h2 services h2*/
 	font-size: 90px;
 	font-weight: bold;
 	color: $ctxt2;
 	line-height: .8;
 	text-transform: capitalize;
 }
-%fh3{/*gallery h2*/
+%fh3 h2{/*gallery h2*/
 	font-size: 90px;
 	font-weight: bold;
 	text-transform: capitalize;
 	color: $ctxt1;
 	text-align: center;
 }
-%fh4{/*subscribe to us h2*/
+%fh4 h2{/*subscribe to us h2*/
 	font-size: 40px;
 	font-weight: bold;
 	line-height: 27px;
@@ -99,13 +105,13 @@ $hbtn: 55px;
 	text-transform: capitalize;
 	letter-spacing: 0;
 }
-%fh5{/*blog h2*/
+%fh5 h2{/*blog h2*/
 	font-size: 90px;
 	font-weight: bold;
 	color: $ctxt2;
 	text-transform: capitalize;
 }
-%fh6{/*contact h2*/
+%fh6 h2{/*contact h2*/
 	font-size: 90px;
 	font-weight: bold;
 	line-height: 25px;
@@ -133,4 +139,16 @@ $hbtn: 55px;
 		align-items: center;
 		justify-content: center;
 	}
+}
+h2{
+	margin: 0;
+	padding: 0;
+}
+p{
+	margin: 0;
+	padding: 0;
+}
+h3{
+	margin: 0;
+	padding: 0;
 }

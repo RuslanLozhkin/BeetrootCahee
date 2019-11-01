@@ -77,12 +77,15 @@
 	.fresh--wrapper{
 		padding: 0 25px;
 		.fresh{
+			.logo{
+				width: 100%;
+				text-align: center;
+			}
 			.header{
+				display: block;
 				nav {
-					display: flex;
-					position: absolute;
 					width: 100%;
-					justify-content: center;
+					display: block;
 					text-align: center;
 					ul{
 						display: none;
@@ -100,7 +103,13 @@
 					label{
 						display: block;
 						cursor: pointer;
-						font-size: 60px;
+						margin-left: auto;
+						height: 42px;
+						width: 42px;
+						img{
+							width: 100%;
+							height: 100%;
+						}
 					}
 					input[type="checkbox"]:checked ~ ul{
 						display: flex;
@@ -143,6 +152,10 @@
 	.fresh--wrapper{
 		padding: 0;
 		.fresh{
+			.header{
+				padding: 0 10px;
+				box-sizing: border-box;
+			}
 			background-position: center;
 			&_main{
 				width: 100%;

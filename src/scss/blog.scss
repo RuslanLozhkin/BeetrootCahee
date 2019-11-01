@@ -95,24 +95,29 @@
 		@extend %btn;
 	}
 }
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1200px){
 	.blog--wrapper{
-		padding: 0 25px;
+		box-sizing: border-box;
 		.blog{
 			width: 100%;
 			display: flex;
 			flex-flow: column wrap;
-			&__p {
+			&__title{
+				font-size: 60px;
+			}
+			&__p{
 				width: 100%;
 			}
 			&__papers{
+				max-width: 80%;
 				display: flex;
 				flex-flow: column wrap;
 				align-items: center;
 				.paper{
-					width: 50%;
+					width: 80%;
 					margin-bottom: 20px;
 					margin-left: 0;
+					overflow: hidden;
 					img{
 						width: 100%;
 					}

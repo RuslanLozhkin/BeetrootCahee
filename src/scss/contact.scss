@@ -83,6 +83,11 @@
 		width: 100%;
 		.contact{
 			width: 100%;
+			&__title{
+				font-size: 60px;
+				width: 100%;
+				text-align: center;
+			}
 			&__p{
 				width: 100%;
 			}
